@@ -15,3 +15,6 @@ sed -i 's/POWERDOWN_TIME=[0-9]*/POWERDOWN_TIME=0/' /etc/kbd/config
 #optional, but this will hack the screen setting to be 1920 on next boot without having to type anything extra in
 sed -i 's/framebuffer_width=[0-9]*/framebuffer_width=1920/' /DietPi/config.txt
 sed -i 's/framebuffer_height=[0-9]*/framebuffer_height=1080/' /DietPi/config.txt
+echo '------------------------------------------------------------------------------'
+echo '-------------------------Automation Script Complete---------------------------'
+echo '------------------------------------------------------------------------------'
