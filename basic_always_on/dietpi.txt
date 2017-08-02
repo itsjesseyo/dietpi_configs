@@ -81,7 +81,7 @@ AUTO_DietpiSoftware_FileServerIndex=0
 #	-1=ramlog 1h clear
 #	-2=ramlog 1h save clear
 #	-3=logrotate + rsyslog
-AUTO_DietpiSoftware_LoggingIndex=-1
+AUTO_DietpiSoftware_LoggingIndex=0
 
 #Webserver Preference Selection:
 # NB: This will get ignored, if you have manually selected any WEBSERVER_Stacks.
