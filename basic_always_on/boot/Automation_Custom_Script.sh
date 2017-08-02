@@ -5,7 +5,7 @@ echo 'set completion-ignore-case On' >> /etc/inputrc
 #disable all hibernation adn sleep - needs to go in bashrc mayb
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 #need to remove serial from cmd.txt and add consoleblank=0 to end of cmd.txt to disable monitor sleep
-sed -i '1s/.*/dwc_otg.lpm_enable=0 console=tty1 root=PARTUUID=ee614650-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait consoleblank=0/' test.config
+sed -i '1s/.*/dwc_otg.lpm_enable=0 console=tty1 root=PARTUUID=ee614650-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait consoleblank=0/' /boot/cmdline.txt 
 #adding some additional power down methods - to cover bases for future
 sed -i 's/BLANK_TIME=[0-9]*/BLANK_TIME=0/' /etc/kbd/config
 sed -i 's/BLANK_DPMS=on/BLANK_DPMS=off/' /etc/kbd/config 
